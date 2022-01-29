@@ -1,0 +1,182 @@
+body {
+  color: #000;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  padding: 0 55px;
+  width: 1219px;
+  min-width: 1219px;
+  align-items: center;
+  font-size: 32px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+  color: #007765;
+  font-size: 64px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.header {
+  background-color: #007765;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0; 
+  left: 0;
+}
+
+.header .container {
+  height: 84px;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.nav__item {
+  position: relative;
+  font-size: 24px;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.nav__link {
+  display: block;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  padding: 28px 12px;
+}
+
+.nav__item:last-of-type .nav__link {
+  padding-right: 0px;
+}
+
+.nav__item:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  transform: translate(0, -50%);
+  top: 50%  ;
+  width: 2px;
+  height: 27%;
+  right: -1px;
+  background-color: #fff;
+}
+
+.jumbotron {
+  margin-top: 84px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/jumbotron.svg");
+}
+
+.jumbotron .container {
+  color: #fff;
+  justify-content: center;
+  height: 400px;
+}
+
+.jumbotron .container h1 {
+  font-size: 72px;
+  font-weight: 500;
+}
+
+#the-problem {
+  background-color: #eeeeee;
+}
+
+#the-problem .container {
+  align-items: normal;
+  padding: 48px;
+}
+
+#the-problem .container p {
+  margin: 20px 0;
+}
+
+.hero {
+  background-image: url("../img/hero.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+
+.hero .container {
+  height: 400px;
+  text-align: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: 500;
+  font-style: italic;
+  padding: 0 165px;
+}
+
+#ppc .container {
+  padding: 48px;
+}
+
+#ppc .container p {
+  margin: 20px 0;
+}
+
+#ppc img {
+  height: 115px;
+  float: left;
+  padding-right: 48px;
+}
+
+#the-team {
+  background-color: #eeeeee;
+}
+
+#the-team .container {
+  padding: 48px;
+}
+
+.workers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 0 1 33%;
+}
+
+.worker_cell {
+  flex: 1 30%;
+  text-align: center;
+  margin: 15px;
+  padding: 24px 0 28px 0; 
+}
+
+.worker_cell .worker_cell_name {
+  color: #007765;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.worker_cell .worker_cell_function {
+  font-size: 18px;
+  font-style: italic;
+  margin: 0;
+}
+
+.footer {
+  background-color: #333333;
+}
+
+.footer .container {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  padding: 48px 340px;
+}

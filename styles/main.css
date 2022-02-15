@@ -57,8 +57,8 @@ h2 {
     flex-direction: row;
 }
 
-.logo {
-    height: 45px;
+.logo img {
+    display: block;
 }
 
 .nav__item {
@@ -78,6 +78,20 @@ h2 {
     text-decoration: none;
     color: #fff;
     padding: 6px 12px;
+}
+
+.nav__link::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 2px;
+    transition: .3s ease;
+    margin: 0 auto;
+}
+
+.nav__link:hover::after {
+    background-color: #ffffff;
+    width: 60%;
 }
 
 .nav__item:last-of-type .nav__link {
@@ -144,7 +158,10 @@ h2 {
     font-size: 48px;
     font-weight: 500;
     font-style: italic;
-    padding: 0 165px;
+}
+
+.hero .text {
+    max-width: 890px;
 }
 
 #ppc {
@@ -214,5 +231,9 @@ h2 {
     text-align: center;
     color: #fff;
     font-size: 18px;
-    padding: 48px 340px;
+    padding: 48px 0;
+}
+
+.footer .text {
+    max-width: 540px;
 }

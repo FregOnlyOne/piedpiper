@@ -91,7 +91,7 @@ h2 {
 
 .nav__link:hover::after {
     background-color: #ffffff;
-    width: 60%;
+    width: 50%;
 }
 
 .nav__item:last-of-type .nav__link {
